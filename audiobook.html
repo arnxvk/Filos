@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title> Download audiobook</title>
+<h1>
+    <a href="index.html" target="" _blank> <img src = "{{ url_for('static', filename='home.png')}}" style="width:42px;height:42px;" align="left">
+</h1>
+<body style="background-color:#FF847C;" align="center">
+<h1>PDF to Audio Converter</h1>
+    <form action="/uploader" method="post" enctype="multipart/form-data">
+    <input type="file" name="file1">
+    <button type="submit">Submit</button>
+</form>
+<h2>Download a file</h2>
+  <p>
+<a href="{{url_for('download_file')}}">Download</a>
+</p>
+</body>
+</html>
